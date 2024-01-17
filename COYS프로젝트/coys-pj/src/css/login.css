@@ -1,0 +1,200 @@
+/* 회원가입 CSS -member.css */
+
+.login {
+  background: url(../../public/images/login_ban2.png) no-repeat 45.8% 100%/46%;
+  font-family: "Bebas Neue", sans-serif;
+  height: 100vh;
+}
+.memtit {
+  margin-left: 25%;
+  font-size: 10rem;
+}
+.outbx {
+  display: flex;
+  gap: 1%;
+}
+/* 전체박스 */
+.membx {
+  padding-left: 0%;
+  width: 500px;
+  height: 400px;
+  margin-left: 25%;
+  border-right: 1px solid #555;
+}
+
+.membx h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 3rem;
+}
+.membx ul {
+  text-align: center;
+}
+.membx li {
+  position: relative;
+  padding: 10px;
+}
+.membx input {
+  width: 70%;
+  height: 5vh;
+  margin-left: 5%;
+  text-align: center;
+  font-size: 20px;
+  vertical-align: baseline;
+}
+.membx .msg {
+  position: absolute;
+  left: 47%;
+  width: 50%;
+  font-size: 14px;
+  padding: 5px 0;
+  font-weight: bold;
+}
+input::placeholder {
+  text-align: left;
+}
+.membx .sbtn {
+  color: #3db7e4;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 40px;
+  padding: 2px 1em 0;
+  background-color: #111836;
+}
+.sbtn:hover {
+  color: #fff;
+}
+.regbx {
+  margin-left: 1%;
+  width: 500px;
+  height: 400px;
+  padding: 15px;
+}
+.regtit {
+  font-size: 3rem;
+}
+.regct {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: column;
+  font-size: 1rem;
+}
+.rbtn {
+  margin-top: 5%;
+  color: #3db7e4;
+  font-size: 1rem;
+  font-weight: 500;
+  height: 40px;
+  padding: 2px 1em 0;
+  background-color: #111836;
+  text-decoration: none;
+}
+.rbtn:hover {
+  color: #fff;
+}
+
+@media screen and (max-width: 375px) {
+  .login {
+    background: url(../../public/images/login_ban2.png) no-repeat 20% 100%/125%;
+    font-family: "Bebas Neue", sans-serif;
+    height: 100vh;
+    padding-top: 20%;
+  }
+  .memtit {
+    margin-left: 0%;
+    font-size: 3.9rem;
+  }
+  .outbx {
+    display: flex;
+    gap: 0%;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .membx {
+    padding-left: 0%;
+    width: 400px;
+    height: 230px;
+    margin-left: 0%;
+    border-right: none;
+  }
+  .membx h2 {
+    text-align: center;
+    padding: 10px;
+    font-size: 2rem;
+  }
+  .regbx {
+    margin-left: 0%;
+    width: 385px;
+    height: 200px;
+    padding: 15px;
+    text-align: center;
+  }
+  .regtit {
+    font-size: 2rem;
+  }
+  .rbtn {
+    margin-top: 5%;
+    color: #3db7e4;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    padding: 2px 1em 0;
+    background-color: #111836;
+    text-decoration: none;
+    margin-left: 5%;
+  }
+}
+@media all and (min-width:768px) and (max-width:1024px) {
+  .login {
+    background: url(../../public/images/login_ban2.png) no-repeat 55% 100%/75%;
+    font-family: "Bebas Neue", sans-serif;
+    height: 100vh;
+    /* padding-top: 5%; */
+  }
+  .memtit {
+    margin-left: 17%;
+    font-size: 6rem;
+  }
+  .outbx {
+    display: flex;
+    gap: 1%;
+    flex-direction: column;
+  }
+
+  .membx {
+    padding-left: 0%;
+    width: 500px;
+    height: 240px;
+    margin-left: 20%;
+    border-bottom: 1px solid #555;
+    border-right: none;
+  }
+  .membx li {
+    position: relative;
+    padding: 5px;
+  }
+  .regbx {
+    margin-left: 28%;
+    width: 500px;
+    height: 400px;
+    padding: 5px;
+  }
+  .regct {
+    margin-top: 2%;
+    display: flex;
+    flex-direction: column;
+    font-size: 1.1rem;
+  }
+  .rbtn {
+    margin-top: 2%;
+    color: #3db7e4;
+    font-size: 1rem;
+    font-weight: 500;
+    height: 40px;
+    padding: 2px 1em 0;
+    background-color: #111836;
+    text-decoration: none;
+    margin-left: 28%;
+  }
+}

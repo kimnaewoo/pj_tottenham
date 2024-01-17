@@ -1,0 +1,70 @@
+/* 메인영역 - SHOP */
+#shop-area {
+  background-color: #fff;
+  position: relative;
+}
+#shop-area strong {
+  color: red;
+}
+.msg-box {
+  margin-top: 3%;
+}
+#shop-area h1 {
+  margin-top: 3%;
+  margin: 0 auto;
+  width: 1000px;
+  height: 220px;
+  font-size: 2.2rem;
+  line-height: 2;
+  font-family: "Bebas Neue", sans-serif;
+}
+#shop-area h2 {
+  margin: 0 auto;
+  font-size: 2.2rem;
+  width: 500px;
+  font-family: "Bebas Neue", sans-serif;
+}
+@media screen and (max-width: 375px) {
+  #shop-area {
+    height: 100vh;
+    padding: 0%;
+  }
+  #shop-area h1 {
+    margin-top: 3%;
+    margin: 0 auto;
+    width: 300px;
+    height: 220px;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  #shop-area h2 {
+    margin: 0 auto;
+    font-size: 1.9rem;
+    width: 400px;
+    font-family: "Bebas Neue", sans-serif;
+    margin-left: 8%;
+  }
+}
+@media all and (min-width:768px) and (max-width:1024px) {
+  #shop-area {
+    background-color: #fff;
+    position: relative;
+    padding-left: 80px;
+  }
+  #shop-area h1 {
+    margin-top: 3%;
+    margin: 0 auto;
+    width: 670px;
+    height: 200px;
+    font-size: 1.5rem;
+    line-height: 2;
+    font-family: "Bebas Neue", sans-serif;
+  }
+  #shop-area h2 {
+    margin: 0 auto;
+    font-size: 2.5rem;
+    width: 430px;
+    font-family: "Bebas Neue", sans-serif;
+}
+}

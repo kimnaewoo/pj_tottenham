@@ -1,0 +1,121 @@
+/* 회원가입 CSS -member.css */
+
+.regbx2 {
+  font-family: "Bebas Neue", sans-serif;
+  padding: 25px;
+  height: 100vh;
+}
+/* 전체박스 */
+.membx2 {
+  width: 700px;
+  height: 770px;
+  padding: 15px;
+  border: 1px solid #555;
+  margin: 0 auto;
+}
+
+.membx2 h2 {
+  text-align: center;
+  padding: 15px;
+  font-size: 4rem;
+}
+
+.membx2 li {
+  position: relative;
+  padding: 25px;
+}
+
+.membx2 input {
+  width: 80%;
+  height: 5vh;
+  font-size: 20px;
+  vertical-align: baseline;
+}
+.membx2 .msg {
+  position: absolute;
+  left: 31%;
+  width: 50%;
+  font-size: 14px;
+  padding: 5px 0;
+  font-weight: bold;
+}
+
+.membx2 .sbtn {
+  padding: 15px;
+  background-color: #111836;
+  font-size: 20px;
+  color: #3db7e4;
+  float: right;
+  margin-right: 9%;
+  cursor: pointer;
+}
+.membx2 .sbtn:hover {
+  color: #fff;
+}
+.membx2 ul li:last-child {
+  font-size: 1.4rem;
+  text-align: center;
+}
+.membx2 ul li:last-child a {
+  color: #0d6efd;
+  margin-left: 2%;
+  text-decoration: none;
+}
+.membx2 ul li:last-child a:hover {
+  color: #494848;
+}
+@media screen and (max-width: 375px) {
+  .membx2 {
+    width: 325px;
+    height: 650px;
+    padding: 0px;
+    border: 1px solid #555;
+    margin: 20% 0% 0% 0%;
+  }
+  .membx2 h2 {
+    text-align: start;
+    padding: 15px;
+    font-size: 2.2rem;
+  }
+  .membx2 li {
+    position: relative;
+    padding: 10px;
+  }
+  .membx2 input {
+    width: 100%;
+    height: 5vh;
+    font-size: 14px;
+    vertical-align: baseline;
+  }
+  .membx2 ul li:last-child {
+    font-size: 1.4rem;
+    text-align: start;
+  }
+  .membx2 .sbtn {
+    padding: 15px;
+    background-color: #111836;
+    font-size: 20px;
+    color: #3db7e4;
+    float: right;
+    margin-right: 35%;
+    cursor: pointer;
+  }
+}
+@media all and (min-width:768px) and (max-width:1024px) {
+  .membx2 {
+    width: 650px;
+    height: 750px;
+    padding: 15px;
+    border: 1px solid #555;
+    margin: 0% 0% 0% 9%;
+  }
+  .membx2 .sbtn {
+    padding: 15px;
+    background-color: #111836;
+    font-size: 20px;
+    color: #3db7e4;
+    float: right;
+    margin-right: 40%;
+    cursor: pointer;
+}
+}

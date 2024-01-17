@@ -1,0 +1,351 @@
+#sellshop-page {
+  width: 99.1vw;
+  padding-bottom: 40vh;
+}
+.selltop {
+  position: relative;
+  width: 99.1vw;
+  height: 600px;
+  background: url(../../public/images/shop/sell_topban.jpg) no-repeat 50% 0%/100%;
+}
+.gsbx {
+  position: absolute;
+  display: flex;
+  justify-content: space-evenly;
+  top: 9%;
+  right: 12%;
+  width: 14.5vw;
+  height: 5vh;
+  border-radius: 15px;
+  text-align: center;
+}
+.gsbx:hover {
+  border: 1px solid #000;
+}
+
+.gs {
+  line-height: 1.4;
+  font-size: 2rem;
+  color: rgb(9, 10, 99);
+}
+.gstit {
+  padding: 0;
+  color: rgb(9, 10, 99);
+  line-height: 2.5;
+  font-size: 1.1rem;
+}
+.cart {
+  position: absolute;
+  top: 10%;
+  right: 5%;
+  font-size: 1.7rem;
+}
+/* .cart::after {
+  position: absolute;
+  content: "";
+  display: block;
+  background-color: red;
+  width: 70%;
+  height: 70%;
+  top: -30%;
+  left: 60%;
+  border-radius: 50%;
+} */
+
+.tit {
+  font-family: "Bebas Neue", sans-serif;
+  padding: 1% 42% 0%;
+  color: rgb(9, 10, 99);
+  font-size: 5rem;
+  font-weight: bold;
+}
+.sell-gnb {
+  margin-left: 7%;
+  display: flex;
+  gap: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.sell-gnb ul li{
+  cursor: pointer;
+}
+.sell-gnb li:hover {
+  transition: 0.1s;
+  color: rgb(9, 10, 99);
+  text-shadow: none;
+  /* -webkit-background-clip: text;
+  background-image: linear-gradient(to bottom, #fff, rgb(9, 10, 99)); */
+}
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 2% 0% 0% 7%;
+  height: 55px;
+}
+.sellban {
+  display: flex;
+  gap: 15px;
+  margin: 0% 0% 2% 6.5%;
+  position: relative;
+}
+.sellban a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 46.2%;
+  width: 13.5%;
+  height: 56%;
+  /* background-color: rgb(9 11 99 / 55%); */
+  border-radius: 15px;
+  background: linear-gradient(0deg, #00164d, transparent);
+}
+
+.sellbanbx img {
+  border-radius: 15px;
+}
+.sellbanp {
+  position: absolute;
+  top: 85%;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 5%;
+  cursor: pointer;
+}
+
+.sellshop {
+  position: relative;
+  width: 90vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2vw 0;
+  padding-left: 7%;
+  overflow: hidden;
+}
+.sellshop > div {
+  position: relative;
+  flex-basis: 23%;
+  aspect-ratio: 1/1.7;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  background-color: #fdfdfd;
+}
+.sell-imbx img {
+  width: 100%;
+}
+.sell-titbx {
+  font-weight: bold;
+  text-align: center;
+}
+.sell-titbx h3 {
+  padding: 6px 0;
+  margin-bottom: 5px;
+  font-size: 1.7rem;
+  color: #000;
+}
+.sell-titbx h2 {
+  margin-bottom: 8px;
+  padding: 0 20px;
+  font-size: 1.6rem;
+}
+.sell-titbx h1 {
+  font-size: 1.2rem;
+}
+.shop-main {
+  height: 30vh;
+}
+
+@media screen and (max-width: 375px) {
+  .selltop {
+    width: 100vw;
+    height: 42vh;
+    background: url(../../public/images/shop/sell_topban.jpg) no-repeat 50% 100%/100%;
+  }
+  .tit {
+    font-family: "Bebas Neue", sans-serif;
+    padding: 17% 0% 0% 35%;
+    color: rgb(9, 10, 99);
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  .sell-gnb {
+    margin: 0% 0% 0% 5%;
+    display: flex;
+    gap: 3%;
+    color: #fff;
+    text-shadow: 1px 1px 1px #000;
+    font-size: 0.7rem;
+    font-weight: bold;
+  }
+  .gsbx{
+    display: none;
+  }
+  p {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 2% 0% 0% 4%;
+    height: 45px;
+  }
+  .sellban {
+    width: 90vw;
+    height: 15vh;
+    display: flex;
+    gap: 1%;
+    margin: 0% 0% 2% 3%;
+    position: relative;
+  }
+  .sellbanbx img {
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+  }
+  .sellban a::after {
+    position: absolute;
+    content: "";
+    display: block;
+    top: 47.2%;
+    width: 24.3%;
+    height: 53%;
+    border-radius: 15px;
+    background: linear-gradient(0deg, #00164d, transparent);
+  }
+  .sellbanp {
+    position: absolute;
+    top: 85%;
+    font-weight: bold;
+    color: #fff;
+    margin-left: 5%;
+    cursor: pointer;
+    font-size: 0.8rem;
+  }
+  .sellshop {
+    position: relative;
+    width: 100vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px 5%;
+    padding-left: 0%;
+    overflow: hidden;
+  }
+  .sellshop > div {
+    position: relative;
+    flex-basis: 23%;
+    aspect-ratio: 1/1.7;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    background-color: #fdfdfd;
+    width: 65px;
+    height: 165px;
+  }
+  .sell-titbx h3 {
+    padding: 6px 0;
+    margin-bottom: 0px;
+    font-size: 0.4rem;
+    color: #000;
+  }
+  .sell-titbx h2 {
+    margin-bottom: 5px;
+    padding: 0 20px;
+    font-size: 0.5rem;
+  }
+  .sell-titbx h1 {
+    font-size: 0.5rem;
+  }
+  .shop-main {
+    height: 5vh;
+  }
+}
+@media all and (min-width:768px) and (max-width:1024px) {
+  .selltop {
+    position: relative;
+    width: 100vw;
+    height: 450px;
+    background: url(../../public/images/shop/sell_topban.jpg) no-repeat 50% 0%/100%;
+}
+.tit {
+  font-family: "Bebas Neue", sans-serif;
+  padding: 1% 42% 0%;
+  color: rgb(9, 10, 99);
+  font-size: 2rem;
+  font-weight: bold;
+}
+.sell-gnb {
+  margin-left: 15%;
+  display: flex;
+  gap: 30px;
+  color: #fff;
+  text-shadow: 1px 1px 1px #000;
+  font-size: 1rem;
+  font-weight: bold;
+  margin-top: 52%;
+}
+.gsbx{
+  display: none;
+}
+.cart{
+  display: none;
+}
+p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 5% 0% 0% 9%;
+  height: 55px;
+}
+.sellban {
+  display: flex;
+  gap: 15px;
+  margin: 0% 0% 2% 11%;
+  position: relative;
+  width: 100vw;
+}
+.sellbanbx{
+  width: 20%;
+}
+.sellbanbx a>img{
+  width: 100%;
+}
+.sellbanp {
+  position: absolute;
+  top: 85%;
+  font-weight: bold;
+  color: #fff;
+  margin-left: 6%;
+  cursor: pointer;
+}
+.sellban a::after {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 46.2%;
+  width: 19.8%;
+  height: 56%;
+  border-radius: 15px;
+  background: linear-gradient(0deg, #00164d, transparent);
+}
+.sellshop {
+  position: relative;
+  width: 99vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 2vw 0;
+  padding-left: 10%;
+  overflow: hidden;
+}
+.sell-titbx h3 {
+  padding: 6px 0;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+  color: #000;
+}
+.sell-titbx h2 {
+  margin-bottom: 8px;
+  padding: 0 20px;
+  font-size: 1rem;
+}
+.sell-titbx h1 {
+  font-size: 0.8rem;
+  margin-bottom: 5%;
+}
+}

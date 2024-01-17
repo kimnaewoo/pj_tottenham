@@ -1,0 +1,161 @@
+#home-area {
+  padding-left: 200px;
+  height: 80vh;
+}
+.htit {
+  margin: 1% 0% 1% 10%;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  cursor: pointer;
+}
+.htit:after {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 4%;
+  height: 1%;
+  background-color: #e1e15b;
+}
+.home {
+  position: relative;
+  display: flex;
+  margin-left: 10%;
+  width: 75vw;
+}
+.home img {
+  cursor: pointer;
+}
+.h-ex {
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  width: 500px;
+  height: 400px;
+  background-color: rgba(17, 24, 54, 0.795);
+  color: #fff;
+  cursor: pointer;
+}
+.h-ex h1 {
+  font-size: 2rem;
+  margin: 1% 0% 5% 1%;
+}
+.h-ex h2 {
+  font-size: 1rem;
+  margin: 10% 0% 5% 3%;
+  color: #bbb3b3;
+  line-height: 1.4;
+}
+.jump {
+  position: absolute;
+  top: 80%;
+  left: 15%;
+}
+.jump a {
+  font-size: 1.4rem;
+  color: #3db7e4;
+}
+.jump a:hover {
+  color: #fff;
+}
+@media screen and (max-width: 375px) {
+  #home-area {
+    padding-left: 12%;
+    height: 70vh;
+  }
+  .home{
+    position: relative;
+    height: 30vh;
+    margin-left: -5%;
+    width: 84vw;
+  }
+  .htit {
+    position: relative;
+    margin: 1% 0% 1% -5%;
+    width: 100%;
+    font-size: 4rem;
+    font-weight: bold;
+    font-family: "Bebas Neue", sans-serif;
+    cursor: pointer;
+}
+.htit:after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 10%;
+    height: 10%;
+    top: 85%;
+    background-color: #e1e15b;
+}
+.hpicture{
+    width: 100%;
+    height: 100%;
+}
+.hpicture img{
+    width: 100%;
+    height: 100%;
+}
+.h-ex {
+  position: absolute;
+  top: 85%;
+  left: 0%;
+  width: 100%;
+  height: 75%;
+  background-color: rgba(17, 24, 54, 0.795);
+  color: #fff;
+  cursor: pointer;
+}
+.h-ex h1 {
+    font-size: 1rem;
+    margin: 3% 0% 3% 5%;
+}
+.h-ex h2 {
+    font-size: 0.6rem;
+    margin: 5% 0% 5% 2%;
+    color: #bbb3b3;
+    line-height: 1.4;
+}
+.jump {
+    position: absolute;
+    top: 75%;
+    left: 5%;
+}
+}
+@media all and (min-width:768px) and (max-width:1024px){
+  #home-area {
+    padding-left: 0px;
+    height: 80vh;
+}
+.htit {
+  margin: 1% 0% 5% 35%;
+  font-size: 4rem;
+  font-weight: bold;
+  font-family: "Bebas Neue", sans-serif;
+  cursor: pointer;
+}
+.home {
+  position: relative;
+  display: flex;
+  margin-left: 10%;
+  width: 85vw;
+  height: 60vh;
+}
+.hpicture{
+  width: 100%;
+    height: 100%;
+}
+.hpicture img{
+  width: 100%;
+  height: 100%;
+}
+.h-ex {
+  position: absolute;
+  top: 45%;
+  left: 25%;
+  width: 515px;
+  height: 300px;
+  background-color: rgb(17 24 54 / 55%);
+  color: #fff;
+  cursor: pointer;
+}
+}

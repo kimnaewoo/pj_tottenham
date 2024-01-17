@@ -1,0 +1,245 @@
+@font-face {
+  font-family: "RubikBubbles-Regular";
+  src: url(../static/fonts/RubikBubbles-Regular.woff);
+}
+@font-face {
+  font-family: "MonomaniacOne-Regular";
+  src: url(../static/fonts/MonomaniacOne-Regular.woff);
+}
+html,
+body {
+  background-color: #f8f5f4;
+}
+.team-area {
+  width: 100vw;
+  height: 350vh;
+  overflow: hidden;
+  /* background-color: #000; */
+  font-family: "Bebas Neue", sans-serif;
+}
+.team-top {
+  margin: 0% 0% 0% 15%;
+  width: 70vw;
+  background: url(../../public/images/team/ban.jpg) no-repeat center/cover;
+  height: 70vh;
+}
+.team-tit {
+  position: relative;
+  margin: 2% 0% 0% 0%;
+  left: 5%;
+  font-size: 4rem;
+}
+.team-tit::after {
+  position: absolute;
+  top: 90%;
+  content: "";
+  display: block;
+  width: 8%;
+  height: 10%;
+  background-color: rgb(9, 10, 99);
+}
+.team {
+  margin: 2% 0% 0% 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1800px;
+}
+.pro {
+  width: 300px;
+  height: 400px;
+}
+.pro-img {
+  width: 270px;
+  height: 350px;
+  position: relative;
+}
+.pro-img::after {
+  position: absolute;
+  top: 90%;
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1%;
+  background-color: rgb(9, 10, 99);
+}
+.pro-img img {
+  width: 100%;
+}
+.pro-data {
+  position: absolute;
+  width: 100%;
+}
+.pro-tit {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0%;
+  height: 20px;
+  margin: -1% 0% 0% 3%;
+}
+.pro-from {
+  font-size: 1.2rem;
+  padding: 0%;
+  font-weight: normal;
+  margin: 1% 0% 0% 3%;
+}
+.pro-num {
+  margin-top: -7%;
+  font-size: 3rem;
+}
+.loan-area {
+  margin-top: 5%;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  /* background-color: #000; */
+  font-family: "Bebas Neue", sans-serif;
+  background-color: #f8f5f4;
+}
+.loan-tit {
+  position: relative;
+  margin: 2% 0% 0% 0%;
+  left: 5%;
+  font-size: 4rem;
+}
+.loan-tit::after {
+  position: absolute;
+  top: 90%;
+  content: "";
+  display: block;
+  width: 8%;
+  height: 10%;
+  background-color: rgb(9, 10, 99);
+}
+.loan {
+  margin: 2% 0% 0% 5%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  max-width: 1800px;
+}
+@media screen and (max-width: 375px) {
+  .team-area {
+    width: 100vw;
+    height: 270vh;
+    overflow: hidden;
+    /* background-color: #000; */
+    font-family: "Bebas Neue", sans-serif;
+    background-color: #f8f5f4;
+  }
+  .team-top {
+    margin: 17% 0% 0% 0%;
+    width: 100vw;
+    background: url(../../public/images/team/ban.jpg) no-repeat right/cover;
+    height: 30vh;
+  }
+  .team-tit {
+    position: relative;
+    margin: 2% 0% 0% 0%;
+    left: 5%;
+    font-size: 4rem;
+  }
+  .team {
+    margin: 2% 0% 0% 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 19px;
+    width: 100vw;
+    margin-left: 5%;
+  }
+  .pro {
+    width: 150px;
+    height: 100px;
+  }
+  .pro-img {
+    width: 70%;
+    height: 100%;
+    position: relative;
+  }
+  .pro-img img {
+    width: 100%;
+    height: 100%;
+  }
+  .pro-img::after {
+    top: 5%;
+    left: 103%;
+    content: "";
+    display: block;
+    width: 1%;
+    height: 95%;
+    background-color: rgb(9, 10, 99);
+  }
+  .pro-tit {
+    font-size: 0.7rem;
+    font-weight: bold;
+    padding: 0%;
+    margin: -10% 0% 0% 30%;
+  }
+  .pro-from {
+    font-size: 0.5rem;
+    padding: 0%;
+    font-weight: normal;
+    margin: -2% 0% 0% 30%;
+  }
+  .pro-num {
+    margin: -50% 0% 0% 75%;
+    font-size: 1.5rem;
+  }
+  .loan-area{
+    height: 60vh;
+  }
+  .loan {
+    margin: 2% 0% 0% 0%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 19px;
+    width: 100vw;
+    margin-left: 5%;
+  }
+}
+@media all and (min-width:768px) and (max-width:1024px){
+  .team-area {
+    width: 100vw;
+    height: 900vh;
+    overflow: hidden;
+    font-family: "Bebas Neue", sans-serif;
+}
+  .team-top {
+    margin: 0% 0% 0% 7.8%;
+    width: 100vw;
+    background: url(../../public/images/team/ban.jpg) no-repeat 0% 0%/92%;
+    height: 60vh;
+  }
+  .team-tit {
+    position: relative;
+    margin: 0% 0% 0% 5%;
+    left: 5%;
+    font-size: 4rem;
+}
+.team {
+  margin: 2% 0% 0% 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 45px;
+  width: 100vw;
+  margin-left: 10%;
+}
+.pro-tit {
+  font-size: 2rem;
+  font-weight: bold;
+  padding: 0%;
+  height: 20px;
+  margin: -3% 0% 0% 5%;
+}
+.pro-from {
+  font-size: 1.2rem;
+  padding: 0%;
+  font-weight: normal;
+  margin: 1% 0% 0% 5%;
+}
+.loan-area{
+  display: none;
+}
+
+}

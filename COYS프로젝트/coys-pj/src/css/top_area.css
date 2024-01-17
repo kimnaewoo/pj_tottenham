@@ -1,0 +1,168 @@
+/* top-area */
+#top-area {
+  background-color: #000;
+  position: relative;
+  display: block;
+  font-family: "Bebas Neue", sans-serif;
+}
+#top-area video {
+  margin: 0% 0%;
+  width: 100vw;
+  height: 116%;
+  background-color: #000;
+  object-fit: none;
+  margin-left: -6%;
+  filter: brightness(0.6);
+}
+#top-area h1,
+#top-area h2,
+#top-area h4 {
+  position: absolute;
+  top: 40%;
+  left: 0;
+  width: 100vw;
+  height: 12vh;
+  text-align: center;
+  font-size: 7rem;
+  font-weight: bold;
+  color: #fff;
+}
+#top-area h2 {
+  top: 50%;
+  line-height: 1;
+}
+#top-area h4 {
+  top: 65%;
+  font-size: 2.5rem;
+  height: 200px;
+  /* filter: brightness(0.85); */
+}
+.logmsg {
+  top: 75%;
+  font-size: 2.5rem;
+  /* filter: brightness(0.85); */
+}
+.wheel {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  top: 75%;
+  left: 48%;
+  color: #fff;
+  border: 1px solid #ffffff40;
+  border-radius: 50px;
+}
+
+.wheel::before {
+  position: absolute;
+  content: "";
+  display: block;
+  top: 21%;
+  left: 49%;
+  width: 2px;
+  height: 14%;
+  background-color: #fff;
+  animation: wheel-ani 2s infinite;
+  z-index: 1;
+}
+@keyframes wheel-ani {
+  to {
+    transform: translateY(100%);
+  }
+}
+.wheel img {
+  width: 100%;
+  height: 50%;
+  transform: translateY(20px);
+}
+@media screen and (max-width: 375px) {
+  #top-area {
+    background-color: #000;
+    position: relative;
+    display: block;
+    font-family: "Bebas Neue", sans-serif;
+    height: 90vh;
+    width: 100vw;
+    padding-left: 0%;
+  }
+  #top-area video {
+    margin: 0% 0%;
+    width: 104.7vw;
+    height: 100vh;
+    background-color: #000;
+    object-fit: none;
+    /* margin-left: -32%; */
+    filter: brightness(0.6);
+  }
+  #top-area h1 {
+    position: absolute;
+    top: 60%;
+    width: 100vw;
+    height: 12vh;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  #top-area h2 {
+    position: absolute;
+    top: 65%;
+    width: 100vw;
+    height: 12vh;
+    text-align: center;
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  #top-area h4 {
+    top: 73%;
+    font-size: 1.5rem;
+    /* filter: brightness(0.85); */
+  }
+  .wheel {
+    display: none;
+  }
+}
+@media all and (min-width:768px) and (max-width:1024px) {
+  #top-area video {
+    margin: 0% 0%;
+    width: 110vw;
+    height: 80%;
+    background-color: #000;
+    object-fit: contain;
+    margin-left: -6%;
+    filter: brightness(0.6);
+}
+  #top-area h1,
+  #top-area h2,
+  #top-area h4 {
+    position: absolute;
+    top: 65%;
+    left: 0;
+    width: 100vw;
+    height: 12vh;
+    text-align: center;
+    font-size: 5rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  #top-area h2 {
+    top: 73%;
+    line-height: 1;
+  }
+  #top-area h4 {
+    top: 83%;
+    font-size: 2.5rem;
+    height: 0px;
+  }
+  .wheel {
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    top: 88%;
+    left: 48%;
+    color: #fff;
+    border: 1px solid #ffffff40;
+    border-radius: 50px;
+  }
+}
