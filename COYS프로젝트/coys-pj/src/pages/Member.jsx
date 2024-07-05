@@ -1,34 +1,34 @@
 // CSS 불러오기
-import "../css/member.css";
+import '../css/member.css';
 
 // 컨텍스트 API 불러오기
-import { dcCon } from "../modules/dcContext";
+import { dcCon } from '../modules/dcContext';
 
-import { useContext, useEffect, useState } from "react";
-import { Link } from "react-router-dom";
+import { useContext, useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 
 // 로컬스토리지 생성 JS
-import { initData } from "../func/mem_fn";
+import { initData } from '../func/mem_fn';
 
 // 전역 스크롤 이벤트 불러오기
-import { ShopscrollFn } from "../func/shop_scroll";
+import { ShopscrollFn } from '../func/shop_scroll';
 
-import $ from "jquery";
+import $ from 'jquery';
 
 export function Member() {
   useEffect(() => {
-    $("html,body").css({ overflowY: "visible" }).animate({ scrollTop: "+=1px" });
+    $('html,body').css({ overflowY: 'visible' }).animate({ scrollTop: '+=1px' });
     // 자동스크롤 이벤트 설정하기 /////
-    if (window.matchMedia("(max-width:375px)").matches) {
+    if (window.matchMedia('(max-width:375px)').matches) {
       // 미디어 쿼리에 따라 이벤트 핸들러 연결
-      window.removeEventListener("scroll", ShopscrollFn);
+      window.removeEventListener('scroll', ShopscrollFn);
     } else {
-      window.addEventListener("scroll", ShopscrollFn);
+      window.addEventListener('scroll', ShopscrollFn);
     }
 
     return () => {
-      window.removeEventListener("scroll", ShopscrollFn);
-      console.log("난 소멸했어~!");
+      window.removeEventListener('scroll', ShopscrollFn);
+      console.log('난 소멸했어~!');
     }; ////////// 소멸자 return //////
   }, []); /////// useEffect ///////////
 
@@ -42,15 +42,15 @@ export function Member() {
   // [상태관리변수]
   // [1] 입력요소 상태변수
   // 1. 아이디 변수
-  const [userId, setUserId] = useState("");
+  const [userId, setUserId] = useState('');
   // 2. 비밀변호 변수
-  const [pwd, setPwd] = useState("");
+  const [pwd, setPwd] = useState('');
   // 3. 비밀번호확인 변수
-  const [chkpwd, setChkPwd] = useState("");
+  const [chkpwd, setChkPwd] = useState('');
   // 4. 사용자이름 변수
-  const [userName, setUserName] = useState("");
+  const [userName, setUserName] = useState('');
   // 5. 이메일 변수
-  const [email, setEmail] = useState("");
+  const [email, setEmail] = useState('');
 
   // [2] 에러상태관리 변수
   // -> 에러상태값 초기값은 에러아님(false)
@@ -66,18 +66,18 @@ export function Member() {
   const [emailError, setEmailError] = useState(false);
 
   // [ 아이디관련 메시지 프리셋 ]
-  const msgId = ["User ID must contain a minimum of 5 characters", "This ID is already in use!", "That's a great ID!"];
+  const msgId = ['User ID must contain a minimum of 5 characters', 'This ID is already in use!', "That's a great ID!"];
 
   // [ 기타 메시지 프리셋 ]
   const msgEtc = {
     // 비밀번호
-    pwd: "5 to 15 digits in the form of special characters, characters, and numbers",
+    pwd: '5 to 15 digits in the form of special characters, characters, and numbers',
     // 비밀번호확인
-    confpwd: "Password verification does not match",
+    confpwd: 'Password verification does not match',
     // 필수입력
-    req: "This is a required entry",
+    req: 'This is a required entry',
     // 이메일
-    email: "Please enter a valid email format",
+    email: 'Please enter a valid email format',
   }; // msgEtc
 
   // [3] 에러메시지 상태변수
@@ -105,7 +105,7 @@ export function Member() {
       initData();
 
       // 1. 로컬스토리지 변수할당
-      let memData = localStorage.getItem("mem-data");
+      let memData = localStorage.getItem('mem-data');
 
       // 2. 로컬스토리지 객체로 변환하기
       memData = JSON.parse(memData);
@@ -178,7 +178,7 @@ export function Member() {
   // 4. 사용자이름 유효성 검사
   const changeUserName = (e) => {
     // 1. 빈값체크 확인
-    if (e.target.value !== "") setUserNameError(false);
+    if (e.target.value !== '') setUserNameError(false);
     else setUserNameError(true);
 
     // 2. 기존입력값 반영하기
@@ -247,7 +247,7 @@ export function Member() {
       initData();
 
       // 1. 로컬스토리지 변수할당
-      let memData = localStorage.getItem("mem-data");
+      let memData = localStorage.getItem('mem-data');
 
       // 2. 로컬스토리지 객체로 변환하기
       memData = JSON.parse(memData);
@@ -265,14 +265,14 @@ export function Member() {
       memData.push(newData);
 
       // 5. 로컬스토리지에 반영하기
-      localStorage.setItem("mem-data", JSON.stringify(memData));
+      localStorage.setItem('mem-data', JSON.stringify(memData));
 
       // 6. 페이지 이동 : 로그인 페이지
-      myCon.chgPage("login");
+      myCon.chgPage('login');
     } // if
     // 3. 불통과시
     else {
-      alert("change your input!");
+      alert('change your input!');
     } // else
   }; //  onSubmit 함수
 
@@ -292,7 +292,7 @@ export function Member() {
                 // 조건문 && 요소
                 userIdError && (
                   <div className="msg">
-                    <small style={{ color: "red", fontSize: "10px" }}>{idMsg}</small>
+                    <small style={{ color: 'red', fontSize: '10px' }}>{idMsg}</small>
                   </div>
                 )
               }
@@ -303,7 +303,7 @@ export function Member() {
                 // userId가 입력전에는 false로 리턴됨!
                 !userIdError && userId && (
                   <div className="msg">
-                    <small style={{ color: "green", fontSize: "10px" }}>{msgId[2]}</small>
+                    <small style={{ color: 'green', fontSize: '10px' }}>{msgId[2]}</small>
                   </div>
                 )
               }
@@ -315,7 +315,7 @@ export function Member() {
                 // 에러시 메시지 출력
                 pwdError && (
                   <div className="msg">
-                    <small style={{ color: "red", fontSize: "10px" }}>{msgEtc.pwd}</small>
+                    <small style={{ color: 'red', fontSize: '10px' }}>{msgEtc.pwd}</small>
                   </div>
                 )
               }
@@ -334,7 +334,7 @@ export function Member() {
                 // 에러시 메시지 출력
                 chkpwdError && (
                   <div className="msg">
-                    <small style={{ color: "red", fontSize: "10px" }}>{msgEtc.confpwd}</small>
+                    <small style={{ color: 'red', fontSize: '10px' }}>{msgEtc.confpwd}</small>
                   </div>
                 )
               }
@@ -346,7 +346,7 @@ export function Member() {
                 // 에러시 메시지 출력
                 userNameError && (
                   <div className="msg">
-                    <small style={{ color: "red", fontSize: "10px" }}>{msgEtc.req}</small>
+                    <small style={{ color: 'red', fontSize: '10px' }}>{msgEtc.req}</small>
                   </div>
                 )
               }
@@ -358,12 +358,12 @@ export function Member() {
                 // 에러시 메시지 출력
                 emailError && (
                   <div className="msg">
-                    <small style={{ color: "red", fontSize: "10px" }}>{msgEtc.email}</small>
+                    <small style={{ color: 'red', fontSize: '10px' }}>{msgEtc.email}</small>
                   </div>
                 )
               }
             </li>
-            <li style={{ overflow: "hidden" }}>
+            <li style={{ overflow: 'hidden' }}>
               {/* 6. 버튼 */}
               <button className="sbtn" onClick={onSubmit}>
                 Submit

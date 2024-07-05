@@ -8,7 +8,6 @@ import { useState, useContext, useEffect } from "react";
 import "../css/login.css";
 
 // 로컬스토리지 초기화함수
-import { initData } from "../func/mem_fn";
 
 // 제이쿼리 불러오기
 import $ from "jquery";
